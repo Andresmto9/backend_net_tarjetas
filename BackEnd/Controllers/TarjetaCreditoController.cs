@@ -70,7 +70,7 @@ namespace BackEnd.Controllers
                 }
             }
 
-            return NoContent();
+            return Ok(tarjetaCreditoModel);
         }
 
         // POST: api/TarjetaCredito
@@ -97,7 +97,7 @@ namespace BackEnd.Controllers
             _context.Tarjeta.Remove(tarjetaCreditoModel);
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return Created();
         }
 
         private bool TarjetaCreditoModelExists(int id)
