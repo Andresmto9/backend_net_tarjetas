@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/tarjetasservice/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsCadenaSQL_717002AF5A",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/dbtarjetadbserver/databases/DBTarjeta",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:CadenaSQL",
+      "dynamicId": null
+    }
+  }
+}
