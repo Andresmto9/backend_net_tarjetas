@@ -97,7 +97,7 @@ namespace BackEnd.Controllers
             _context.Tarjeta.Remove(tarjetaCreditoModel);
             await _context.SaveChangesAsync();
 
-            return Created();
+            return Ok(tarjetaCreditoModel); ;
         }
 
         private bool TarjetaCreditoModelExists(int id)
